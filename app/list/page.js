@@ -9,6 +9,8 @@ export default function List() {
                         <div className="food" key={i}>
                             <img src={`food${i}.png`} className="food-img"></img>
                             <h4>{a} $40</h4>
+                            <span> 1 </span>
+                            <button>+</button>
                         </div>
                     )
                 })
