@@ -16,14 +16,14 @@ export default function List() {
                             <h4>{a} $40</h4>
                             <button onClick={function () {
                                 let copyQty = [...qty]; // 독립적인 array 복사본 생성
-                                copyQty[i] = copyQty[i] - 1;
+                                copyQty[i]--;
                                 qtyf(copyQty);
                                 // array나 object자료형 state 수정할때는 이렇게 사용해야함
                             }}>-</button>
                             <span> {qty[i]} </span>
                             <button onClick={function () {
                                 let copyQty = [...qty]; // 독립적인 array 복사본 생성
-                                copyQty[i] = copyQty[i] + 1;
+                                copyQty[i]++;
                                 qtyf(copyQty);
                             }}>+</button>
                         </div>
